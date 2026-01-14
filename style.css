@@ -1,32 +1,53 @@
-#uwu-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: pink;
-    z-index: 9999;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: uwuBlink 1s infinite;
-}
-
-#activate-button {
-    padding: 15px 30px;
-    font-size: 20px;
-    background: #ff69b4;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: auto;
-    display: block;
-}
-
-@keyframes uwuBlink {
-    0% { background: rgba(255, 105, 180, 0.8); }
-    50% { background: rgba(255, 182, 193, 0.9); }
-    100% { background: rgba(255, 105, 180, 0.8); }
-}
+body {
+    background:#111;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+  }
+  
+  button {
+    padding:15px 30px;
+    font-size:20px;
+    background:#ff69b4;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin:10px;
+  }
+  
+  #uwu-overlay,
+  #train-overlay {
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    animation:blink 1s infinite;
+  }
+  
+  #uwu-overlay {
+    background:pink;
+  }
+  
+  #train-overlay {
+    background: lightgreen;
+    color:white;
+  }
+  
+  h1 {
+    font-family:"Comic Sans MS";
+    color:white;
+  }
+  
+  @keyframes blink {
+    0% { opacity:0.8; }
+    50% { opacity:1; }
+    100% { opacity:0.8; }
+  }
+  
