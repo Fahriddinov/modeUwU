@@ -20,7 +20,8 @@ body {
   }
   
   #uwu-overlay,
-  #train-overlay {
+  #train-overlay,
+  #chicken-overlay {
     display:none;
     position:fixed;
     inset:0;
@@ -30,19 +31,6 @@ body {
     align-items:center;
     animation:blink 1s infinite;
   }
-
-  #chicken-overlay {
-    display:none;
-    position:fixed;
-    inset:0;
-    background: red;
-    z-index:9999;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    animation:blink 0.5s infinite;
-  }
-  
   
   #uwu-overlay {
     background:pink;
@@ -51,6 +39,11 @@ body {
   #train-overlay {
     background: lightgreen;
     color:white;
+  }
+
+  #chicken-overlay {
+    background: red;
+    color: white;
   }
   
   h1 {
