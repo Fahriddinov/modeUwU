@@ -26,3 +26,17 @@ trainBtn.onclick = () => {
     trainOverlay.style.display = "none";
   }, 4000);
 };
+
+const chickenBtn = document.getElementById("chicken-button");
+const chickenOverlay = document.getElementById("chicken-overlay");
+const chickenSound = document.getElementById("chicken-sound");
+
+chickenBtn.onclick = () => {
+  chickenOverlay.style.display = "flex";
+  chickenSound.currentTime = 0;
+  chickenSound.play();
+
+  setTimeout(() => {
+    chickenOverlay.style.display = "none";
+  }, 4000);
+};
