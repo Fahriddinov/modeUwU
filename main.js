@@ -40,3 +40,12 @@ chickenBtn.onclick = () => {
     chickenOverlay.style.display = "none";
   }, 4000);
 };
+
+// PWA: register Service Worker (works on HTTPS or localhost)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {
+      // ignore
+    });
+  });
+}
