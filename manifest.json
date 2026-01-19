@@ -1,7 +1,7 @@
 {
-  "name": "UwU Mode",
-  "short_name": "UwU",
-  "description": "UwU Mode mini app",
+  "name": "LordInstants",
+  "short_name": "LordInst",
+  "description": "Instants mini app",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
